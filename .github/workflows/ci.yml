@@ -33,3 +33,8 @@ jobs:
           run: |
             poetry run coverage run -m pytest
             poetry run coverage xml
+        - uses: paambaati/codeclimate-action@v3.2.0
+          env:
+            CC_TEST_REPORTER_ID: 60717467966d9543f67fc08b0305b721b9fdb4395d4ec129bd1f26c2895649a3
+          with:
+            coverageCommand: poetry run coverage xml
