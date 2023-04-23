@@ -16,3 +16,8 @@ def secondary_rate() -> float:
 def name() -> str:
     """Return the name of the calculator."""
     return "Calculator"
+
+
+def secondary_name() -> str:
+    """Return the name of the secondary calculator."""
+    return "Secondary Calculator"
